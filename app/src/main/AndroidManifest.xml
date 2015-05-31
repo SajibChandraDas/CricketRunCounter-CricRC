@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sajibchandradas.crc2" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="CricRC"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Registration"
+            android:label="CricRC" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="First Innings" >
+            <intent-filter>
+                <action android:name="com.example.sajibchandradas.crc2.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="Second Innings" >
+            <intent-filter>
+                <action android:name="com.example.sajibchandradas.crc2.SECONDACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SecondInningsWinner"
+            android:label="Winner" >
+            <intent-filter>
+                <action android:name="com.example.sajibchandradas.crc2.SECONDINNINGSWINNER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FirstInningsWinner"
+            android:label="Winner" >
+            <intent-filter>
+                <action android:name="com.example.sajibchandradas.crc2.FIRSTINNINGSWINNER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
